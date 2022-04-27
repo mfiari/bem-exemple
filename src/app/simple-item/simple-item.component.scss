@@ -1,0 +1,31 @@
+
+.item {
+  border-bottom: 1px solid;
+  width: 80%;
+&:hover {
+   background-color: #cccccc;
+ }
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.description {
+  padding-left: 10px;
+}
+
+.name {
+  text-align: center;
+  font-size: 16px;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}

@@ -1,0 +1,74 @@
+<div class="page">
+  <div class="left-menu">
+    <div class="left-menu__item">
+      Item 1
+    </div>
+    <div class="left-menu__item">
+      Item 1
+    </div>
+    <div class="left-menu__item">
+      Item 1
+    </div>
+  </div>
+  <div class="page__content">
+    <div class="page__description">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim purus sit amet libero malesuada eleifend.
+        Donec ut urna molestie, ultricies metus eu, viverra quam. Mauris ullamcorper, lectus ut feugiat varius,
+        arcu felis laoreet turpis, sed pretium neque eros non libero. Nulla facilisi.
+        Etiam vestibulum, est in mollis rhoncus, nisi magna feugiat metus, eu mollis sapien urna ac nunc.
+        Suspendisse at tortor metus. In fermentum vulputate volutpat. Nunc massa massa, euismod ac purus pulvinar,
+        venenatis dapibus lorem. Quisque nec nibh lectus.
+      </p>
+      <p>
+        Vivamus pretium accumsan lorem et hendrerit. Morbi semper lorem ante, nec luctus erat aliquam quis.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Nullam sagittis cursus justo, at interdum tortor aliquam nec. Donec pretium nulla vitae enim sodales hendrerit.
+        Donec varius consectetur velit eget viverra. Quisque a fringilla tellus. Fusce et lacinia justo, viverra luctus diam.
+        Suspendisse dui dui, ultrices scelerisque erat vel, dictum tincidunt turpis.
+        Pellentesque vulputate turpis vel metus lobortis, at consequat turpis sodales. In luctus laoreet lorem,
+        et placerat lorem laoreet non. Pellentesque vel mollis magna. Vestibulum ut ipsum lectus.
+        Suspendisse mauris dui, sollicitudin vitae consequat quis, consequat a mauris.
+        Fusce dignissim vehicula nisi, vel iaculis lacus hendrerit ut.
+      </p>
+    </div>
+    <div class="left-content">
+      <div>
+        A simple list
+      </div>
+      <div class="simple-list">
+        <div *ngFor="let item of mySimpleItemList" class="item"
+             [ngClass]="{ 'selected': item.selected }"
+              (click)="selectItem(item)">
+          <div class="name">{{ item.name }}</div>
+          <div class="content">
+            <img class="image" src="{{ item.imageLink }}">
+            <div class="description">
+              <span>{{ item.description }}</span>
+            </div>
+          </div>
+        </div>
+        <!--<app-simple-item></app-simple-item>-->
+      </div>
+    </div>
+    <div class="right-content">
+      <div>
+        A BEM list
+      </div>
+      <div class="bem-list">
+        <div *ngFor="let item of myBemItemList" class="bem-item"
+             [ngClass]="{ 'bem-item--selected': item.selected }"
+             (click)="selectItem(item)">
+          <div class="bem-item__name">{{ item.name }}</div>
+          <div class="bem-item__content">
+            <img class="bem-item__image" src="{{ item.imageLink }}">
+            <div class="bem-item__description">
+              <span>{{ item.description }}</span>
+            </div>
+          </div>
+        </div>
+        <!--<app-bem-item></app-bem-item>-->
+      </div>
+    </div>
+  </div>
+</div>

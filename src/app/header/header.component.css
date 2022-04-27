@@ -1,0 +1,39 @@
+
+.header {
+
+}
+
+.header__title {
+  text-align: center;
+}
+
+.header__menu {
+
+}
+
+.menu {
+  display: flex;
+  padding:0;
+  background-color: #ccc;
+  justify-content: center;
+}
+
+.menu__item {
+  display:block;
+  min-width: 120px;
+
+  margin: 0.5rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  background-color: #1ABC9C;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.menu__item:hover {
+  background-color: lightseagreen;
+  color: #ffe843;
+  border-color: #ffe843;
+}

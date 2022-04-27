@@ -1,0 +1,95 @@
+.page {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  &__content {
+    width: 1000px;
+  }
+}
+
+.left-menu {
+  width: 200px;
+}
+
+/*.description span {
+  color: red;
+}*/
+
+/*  SIMPLE LIST  */
+
+.left-content {
+  display: inline-block;
+  width: 450px;
+}
+
+.item {
+  border-bottom: 1px solid;
+  width: 80%;
+  &:hover {
+    background-color: #cccccc;
+  }
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.description {
+  padding-left: 10px;
+}
+
+.name {
+  text-align: center;
+  font-size: 16px;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
+
+/*  END SIMPLE LIST  */
+
+/*  BEM LIST  */
+
+.right-content {
+  display: inline-block;
+  width: 450px;
+  margin-left : 20px
+}
+
+.bem-item {
+  border-bottom: 1px solid;
+  width: 80%;
+  &:hover {
+    background-color: #cccccc;
+  }
+  &--selected {
+    background-color: lightblue;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+  &__name {
+    text-align: center;
+    font-size: 16px;
+  }
+  &__image {
+    width: 100px;
+    height: auto;
+  }
+  &__description {
+    padding-left: 10px;
+  }
+}
+
+/*  END BEM LIST  */
+
+
